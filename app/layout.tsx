@@ -1,7 +1,17 @@
-import '@/app/ui/global.css';
+import "@/app/ui/global.css";
 
-import { inter } from '@/app/ui/fonts';
- 
+import { inter } from "@/app/ui/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | Acme Dashboard",
+    default: "Acme Dashboard",
+  },
+  description: "Test description",
+  metadataBase: new URL("https://nextjs-dashboard-dt96.vercel.app"),
+};
+
 export default function RootLayout({
   children,
 }: {
